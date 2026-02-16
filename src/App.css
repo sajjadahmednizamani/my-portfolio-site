@@ -21,6 +21,7 @@ body{
   background: linear-gradient(135deg, #0b0415 0%, #1b0b2a 100%);
   color:var(--text);
   scroll-behavior:smooth;
+  font-family: 'Libre Baskerville', 'Times New Roman', serif;
 }
 .app{display:flex;transition: all .3s;}
 
@@ -327,4 +328,13 @@ body{
   background: rgba(242,182,0,0.2);
   transform:scale(1.02);
   box-shadow:0 5px 15px rgba(242,182,0,0.4);
+}
+.about-section h2,
+.skills-section h2,
+.portfolio-section h2,
+.experience-section h2,
+.contact-section h2 {
+  color: #facc15; /* soft professional yellow */
+  font-weight: 700;
+  letter-spacing: 1px;
 }

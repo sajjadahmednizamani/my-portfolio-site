@@ -45,8 +45,22 @@ export default function Portfolio() {
               <a href="/resume.pdf" className="btn-outline">Download CV</a>
             </div>
             <div className="socials">
-              <a href="https://github.com/" target="_blank"><Github /></a>
-              <a href="https://www.linkedin.com/in/sajjad-ahmed-48b9a2390/" target="_blank"><Linkedin /></a>
+              <a
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/sajjad-ahmed-48b9a2390/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Linkedin />
+              </a>
+
             </div>
           </div>
         </section>

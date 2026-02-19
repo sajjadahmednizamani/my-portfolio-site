@@ -6,23 +6,25 @@ export default function Portfolio() {
   return (
     <div className="app">
 
-      {/* ===== SIDEBAR ===== */}
-      <nav className="sidebar">
-        <div className="profile">
-          <img src="/myphoto.jpeg" alt="Sajjad Ahmed" />
-          <h2>Sajjad Ahmed</h2>
-          <p>React Native Developer</p>
+      {/* ===== HORIZONTAL TOP NAVBAR ===== */}
+      <header className="top-navbar">
+        <div className="navbar-left">
+          <img src="/myphoto.jpeg" alt="Sajjad Ahmed" className="navbar-profile-pic" />
+          <h1>Sajjad Ahmed</h1>
         </div>
-
-        <ul className="menu">
-          <li><a href="#about"><Home size={18}/> Home</a></li>
-          <li><a href="#background"><User size={18}/> Background</a></li>
-          <li><a href="#skills"><Code size={18}/> Skills</a></li>
-          <li><a href="#projects"><Briefcase size={18}/> Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+        <nav className="navbar-menu">
+          <a href="#about"><Home size={16}/> Home</a>
+          <a href="#background"><User size={16}/> Background</a>
+          <a href="#skills"><Code size={16}/> Skills</a>
+          <a href="#projects"><Briefcase size={16}/> Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div className="navbar-socials">
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><Github /></a>
+          <a href="https://www.linkedin.com/in/sajjad-ahmed-48b9a2390/" target="_blank" rel="noopener noreferrer"><Linkedin /></a>
+        </div>
+      </header>
 
       {/* ===== MAIN CONTENT ===== */}
       <div className="main-content">
@@ -30,12 +32,13 @@ export default function Portfolio() {
         {/* HERO / HOME */}
         <section id="about" className="hero-section">
           <div className="hero-left">
+            {/* Profile picture in hero */}
+            <img src="/myphoto.jpeg" alt="Sajjad Ahmed" className="hero-profile-pic" />
+
             <p className="greeting">Hi 👋</p>
             <h1>I'm Sajjad Ahmed</h1>
-            <p>React Native Developer & AI App Builder creating beautiful UI/UX 
-              experiences for mobile & web apps.</p>
+            <p>React Native Developer & AI App Builder creating beautiful UI/UX experiences for mobile & web apps.</p>
 
-            {/* Accent box */}
             <div className="hero-accent-box">
               <p>Currently building AI-powered mobile applications 🚀</p>
             </div>
@@ -44,49 +47,13 @@ export default function Portfolio() {
               <a href="#projects" className="btn-main">View Projects</a>
               <a href="/resume.pdf" className="btn-outline">Download CV</a>
             </div>
-            <div className="socials">
-              <a
-                href="https://github.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Github />
-              </a>
-
-              <a
-                href="https://www.linkedin.com/in/sajjad-ahmed-48b9a2390/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Linkedin />
-              </a>
-
-            </div>
           </div>
         </section>
 
         {/* ABOUT ME */}
         <section id="background" className="about-section">
           <h2>About Me</h2>
-          <div className="about-content">
-            <div className="about-text">
-              <p>I am pursuing BS Computer Science from Sukkur IBA University (2022 - Present). Focused on mobile development & AI-powered applications.</p>
-              <div className="stats">
-                <div className="stat">
-                  <h3>10+</h3>
-                  <p>Projects</p>
-                </div>
-                <div className="stat">
-                  <h3>450+</h3>
-                  <p>Hours Coding</p>
-                </div>
-                <div className="stat">
-                  <h3>95%</h3>
-                  <p>Client Satisfaction</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <p>I am pursuing BS Computer Science from Sukkur IBA University (2022 - Present). Focused on mobile development & AI-powered applications.</p>
         </section>
 
         {/* SKILLS */}
@@ -105,7 +72,7 @@ export default function Portfolio() {
           </div>
         </section>
 
-        {/* PORTFOLIO */}
+        {/* PROJECTS */}
         <section id="projects" className="portfolio-section">
           <h2>Projects</h2>
           <div className="portfolio-gallery">
@@ -131,18 +98,12 @@ export default function Portfolio() {
         {/* EXPERIENCE */}
         <section id="experience" className="experience-section">
           <h2>Experience</h2>
-          <div className="experience-content">
-            <p>
-              Freelance React Native Developer (2024 - Present)
-              <ul>
-                <li>Developed 5+ mobile applications from scratch.</li>
-                <li>Integrated APIs, payment gateways, and cloud solutions.</li>
-              </ul>
-            </p>
-          </div>
+          <ul>
+            <li>Freelance React Native Developer (2024 - Present)</li>
+            <li>Developed 5+ mobile applications from scratch.</li>
+            <li>Integrated APIs, payment gateways, and cloud solutions.</li>
+          </ul>
         </section>
-
-     
 
         {/* CONTACT */}
         <section id="contact" className="contact-section">
